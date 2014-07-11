@@ -15,10 +15,6 @@ namespace UdpAzureService
         public UdpServer()
         {
             InitializeComponent();
-            if (!System.Diagnostics.EventLog.SourceExists("UdpEventLog"))
-            {
-                System.Diagnostics.EventLog.CreateEventSource("UdpEventLog","AzureUdpLog");
-            }
             UdpEventLog.Source = "UdpEnventLog";
             UdpEventLog.Log = "AzureUdpLog";
         }

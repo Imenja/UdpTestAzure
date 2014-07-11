@@ -31,6 +31,11 @@
             this.UdpEventLog = new System.Diagnostics.EventLog();
             ((System.ComponentModel.ISupportInitialize)(this.UdpEventLog)).BeginInit();
             // 
+            // UdpEventLog
+            // 
+            this.UdpEventLog.Log = "Application";
+            this.UdpEventLog.Source = "UdpEnventLog";
+            // 
             // UdpServer
             // 
             this.ServiceName = "UdpServer";
